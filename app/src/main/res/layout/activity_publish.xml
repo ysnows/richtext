@@ -101,112 +101,128 @@
             android:gravity="center_vertical"
             android:orientation="horizontal" >
 
-            <HorizontalScrollView
+            <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:scrollbars="none" >
+                android:orientation="horizontal" >
 
-                <LinearLayout
+                <HorizontalScrollView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal" >
+                    android:layout_weight="1"
+                    android:scrollbars="none" >
 
-                    <ImageView
-                        android:id="@+id/button_image"
-                        android:layout_width="@dimen/dp_30"
-                        android:layout_height="@dimen/dp_30"
-                        android:layout_marginLeft="@dimen/dp_20"
-                        android:onClick="@{onClickListener}"
-                        android:padding="@dimen/dp_4"
-                        android:src="@mipmap/picture_icon" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
 
-                    <ImageView
-                        android:id="@+id/button_bold"
-                        android:layout_width="@dimen/dp_30"
-                        android:layout_height="@dimen/dp_30"
-                        android:layout_marginLeft="@dimen/dp_20"
-                        android:onClick="@{onClickListener}"
-                        android:padding="@dimen/dp_4"
-                        android:src="@mipmap/bold" />
+                        <ImageView
+                            android:id="@+id/button_image"
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:onClick="@{onClickListener}"
+                            android:padding="@dimen/dp_4"
+                            android:src="@mipmap/picture_icon" />
 
-                    <ImageView
-                        android:id="@+id/button_italic"
-                        android:layout_width="@dimen/dp_30"
-                        android:layout_height="@dimen/dp_30"
-                        android:layout_marginLeft="@dimen/dp_20"
-                        android:onClick="@{onClickListener}"
-                        android:padding="@dimen/dp_3"
-                        android:src="@mipmap/ic_text_italic" />
+                        <ImageView
+                            android:id="@+id/button_bold"
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:onClick="@{onClickListener}"
+                            android:padding="@dimen/dp_4"
+                            android:src="@mipmap/bold" />
 
-                    <ImageView
-                        android:id="@+id/button_underline"
-                        android:layout_width="@dimen/dp_30"
-                        android:layout_height="@dimen/dp_30"
-                        android:layout_marginLeft="@dimen/dp_20"
-                        android:onClick="@{onClickListener}"
-                        android:padding="@dimen/dp_4"
-                        android:src="@mipmap/underline" />
+                        <ImageView
+                            android:id="@+id/button_italic"
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:onClick="@{onClickListener}"
+                            android:padding="@dimen/dp_3"
+                            android:src="@mipmap/ic_text_italic" />
 
-                    <ImageView
-                        android:id="@+id/button_delete"
-                        android:layout_width="@dimen/dp_30"
-                        android:layout_height="@dimen/dp_30"
-                        android:layout_marginLeft="@dimen/dp_20"
-                        android:onClick="@{onClickListener}"
-                        android:padding="@dimen/dp_3"
-                        android:src="@mipmap/ic_text_delete" />
+                        <ImageView
+                            android:id="@+id/button_underline"
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:onClick="@{onClickListener}"
+                            android:padding="@dimen/dp_4"
+                            android:src="@mipmap/underline" />
 
-                    <ImageView
-                        android:id="@+id/button_typeface"
-                        android:layout_width="@dimen/dp_30"
-                        android:layout_height="@dimen/dp_30"
-                        android:layout_marginLeft="@dimen/dp_20"
-                        android:onClick="@{onClickListener}"
-                        android:padding="3dp"
-                        android:src="@mipmap/ic_text_font" />
+                        <ImageView
+                            android:id="@+id/button_delete"
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:onClick="@{onClickListener}"
+                            android:padding="@dimen/dp_3"
+                            android:src="@mipmap/ic_text_delete" />
 
-                    <ImageView
-                        android:id="@+id/button_color"
-                        android:layout_width="@dimen/dp_30"
-                        android:layout_height="@dimen/dp_30"
-                        android:layout_marginLeft="@dimen/dp_20"
-                        android:onClick="@{onClickListener}"
-                        android:padding="3dp"
-                        android:src="@mipmap/ic_color" />
+                        <ImageView
+                            android:id="@+id/button_typeface"
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:onClick="@{onClickListener}"
+                            android:padding="3dp"
+                            android:src="@mipmap/ic_text_font" />
 
-                    <ImageView
-                        android:id="@+id/button_list_ul"
-                        android:layout_width="@dimen/dp_30"
-                        android:layout_height="@dimen/dp_30"
-                        android:layout_marginLeft="@dimen/dp_20"
-                        android:onClick="@{onClickListener}"
-                        android:padding="@dimen/dp_4"
-                        android:src="@mipmap/list_ul" />
+                        <ImageView
+                            android:id="@+id/button_color"
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:onClick="@{onClickListener}"
+                            android:padding="3dp"
+                            android:src="@mipmap/ic_color" />
 
-                    <Space
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1" />
+                        <ImageView
+                            android:id="@+id/button_list_ul"
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:onClick="@{onClickListener}"
+                            android:padding="@dimen/dp_4"
+                            android:src="@mipmap/list_ul" />
 
-                    <ImageView
-                        android:id="@+id/button_list_ol"
-                        android:layout_width="@dimen/dp_30"
-                        android:layout_height="@dimen/dp_30"
-                        android:layout_marginLeft="@dimen/dp_20"
-                        android:onClick="@{onClickListener}"
-                        android:padding="@dimen/dp_4"
-                        android:src="@mipmap/list_ol" />
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
 
-                    <Space
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1" />
+                        <ImageView
+                            android:id="@+id/button_list_ol"
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:onClick="@{onClickListener}"
+                            android:padding="@dimen/dp_4"
+                            android:src="@mipmap/list_ol" />
 
-                </LinearLayout >
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
 
-            </HorizontalScrollView >
+                    </LinearLayout >
+
+                </HorizontalScrollView >
+
+                <ImageView
+                    android:layout_width="@dimen/dp_50"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_blur" />
+
+            </RelativeLayout >
 
             <ImageView
                 android:id="@+id/button_rich_undo"
